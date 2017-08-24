@@ -18,7 +18,7 @@ var book = mongoose.model(
 	}
 );
 
-//Instances of book
+// //Instances of book
 
 var vs = new book(
 	{
@@ -147,7 +147,7 @@ zokPok.save((err) => {
 // 	}};
 // }); 
 
-// book.find({vid:"Raskazi"}, function(err, res){
+// book.find({"fizickiOpis.brNaStr" : {$gt : 100}}, function(err, res){
 // 	if(err){
 // 		console.log(err);
 // 	} else {
@@ -155,9 +155,7 @@ zokPok.save((err) => {
 // 	}
 // }); 
 
-//??? not working ???
-
-// book.findOne({ "fizickiOpis.brNaStr": "NumberInt(47)" }, function(err, res){
+// book.findOne({"fizickiOpis.tiraz" :  80 }, function(err, res){
 // 	if(err){
 // 		console.log(err);
 // 	} else {
